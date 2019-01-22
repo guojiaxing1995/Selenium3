@@ -22,7 +22,7 @@ def step_register1(context):
 
 @when('I open the register website')
 def step_register2(context):
-    context.driver.get("http://www.5itest.cn/register")
+    context.driver.get("http://")
     sleep(15)
 
 @then('I expect that the title is "注册"')
