@@ -13,14 +13,14 @@ class RegisterPage:
         self.driver = driver
         self.getByLocal = GetByLocal(self.driver)
 
-    def get_userName_element(self):
+    def input_userName(self,username):
         """
         获取注册页面用户名输入框
         """
-        return self.getByLocal.get_element('register_element','userName')
+        self.getByLocal.get_element('register_element','userName').send_keys(username)
 
-    def get_identifying_code(self):
+    def get_code_num(self):
         """
        获取验证码图片element
         """
-        return self.getByLocal.get_element('register_element','identifying_code')
+        self.getByLocal.get_element('register_element','identifying_code')
