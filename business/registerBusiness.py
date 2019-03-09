@@ -6,7 +6,7 @@
 @Desc    :
 """
 from handle.registerHandle import RegisterHandle
-
+from TestCase import ParameTestCase
 
 class RegisterBusiness:
     def __init__(self,driver):
@@ -16,3 +16,4 @@ class RegisterBusiness:
     def register(self,user_name):
         self.register_handle.input_userName(user_name)
         self.register_handle.get_code_num()
+        ParameTestCase.log("调用日志")

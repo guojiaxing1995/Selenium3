@@ -11,6 +11,7 @@ import os
 import time
 import unittest
 
+from TestCase import ParameTestCase
 from TestCase.Test_001_register import Register
 from lib.read_ini import ReadIni
 
@@ -21,7 +22,10 @@ class RunDDT:
 
     def creatsuit(self,i):
         test_suite = unittest.TestSuite()
+        test_suite.addTest(ParameTestCase("create_driver", parames=i))
+        test_suite.addTest(ParameTestCase("get_url", parames=i))
         test_suite.addTest(Register("test_001_register",parames=i))
+        test_suite.addTest(ParameTestCase("quit_driver", parames=i))
 
         return test_suite
 
