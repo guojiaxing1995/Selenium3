@@ -4,12 +4,10 @@ python3 + selenium3 web自动化
 项目整合了数据驱动、关键字驱动和行为驱动测试框架。其中数据驱动采用PO分层的设计思想，结合unnitest实现分层自动化。支持多个浏览器同时运行case、生成结果报告、保存错误截图和自定义日志等功能
 
 ### 数据驱动
-<div style="margin-left:0px">
-<img src="https://github.com/guojiaxing1995/Selenium3/blob/master/github_img/数据驱动.png" width="800" />
-</div>
-<div style="float=left;">
-<img src="https://github.com/guojiaxing1995/Selenium3/blob/master/github_img/配置文件.png" width="800" />
-</div>
+
+
+<img src="https://github.com/guojiaxing1995/Selenium3/blob/master/github_img/数据驱动.png" style="margin:0" /><img src="https://github.com/guojiaxing1995/Selenium3/blob/master/github_img/配置文件.png"  />
+
 配置文件中配置需要测试的浏览器和元素定位信息。用例层调用业务层，业务层调用元素层，一个页面的元素放在一个page。分层设计方便了项目维护，减少维护成本。
 
 
